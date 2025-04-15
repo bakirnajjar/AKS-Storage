@@ -2,6 +2,7 @@ kind: StorageClass
 apiVersion: storage.k8s.io/v1
 metadata:
   name: azuredisk-premium-retain
+  namespace: banaj
 provisioner: kubernetes.io/azure-disk
 reclaimPolicy: Retain   # Retain or Delete
 volumeBindingMode: WaitForFirstConsumer   # WaitForFirstConsumer or Immediate
